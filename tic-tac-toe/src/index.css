@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* background-color: #1e1e1e;
+  color: white; */
+
+}
+body {
+  background-color: #1e1e1e;
+  color: white;
+}
+[data-theme="light"] {
+  background-color: white;
+  color: black;
+}
+.game {
+  max-width: calc(3 * 100px);
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.status {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.player {
+  padding: 5px 10px;
+}
+.res-button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.res-button:hover {
+  transition: 0.3s ease-in-out;
+  background-color: grey;
+  color: black;
+}
+.theme {
+  border: none;
+  padding: 5px 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.theme:hover {
+  transition: 0.3s ease-in-out;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 36px;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  background-color: #1e1e1e;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.cell:hover {
+  background-color: white;
+  color: black;
+}
